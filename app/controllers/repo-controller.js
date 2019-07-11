@@ -13,10 +13,10 @@ const Octokit = require('@octokit/rest');
 router.get('/new', async (req, res) => {
     // const { repo } = req.body;
     // const { token } = req.headers;
-    
+
     // TODO: make a database call to fetch the OAuth token from the server
     const OAuth = process.env.OAUTH;
-    const repositoryName = 'MyNewRepox';
+    const repositoryName = 'MyNewRepoz';
     const clientWithAuth = new Octokit({
         auth: OAuth
     });
